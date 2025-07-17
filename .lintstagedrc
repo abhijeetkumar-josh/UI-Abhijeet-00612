@@ -1,7 +1,4 @@
 {
-    "*.js": [
-      "eslint --max-warnings 0 .",
-      "prettier --write"
-    ],
-    "*.*": "prettier --write"
-  }
+  "*.js": ["eslint --max-warnings 0 .", "prettier --write"],
+  "*.{json,css,html}": "prettier --write"
+}
