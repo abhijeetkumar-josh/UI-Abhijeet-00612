@@ -5,11 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <script type="module" src="/src/main.js"></script>
+    <title>UI Design</title>
   </head>
   <body>
-    <h1>Hello Everyone!!!</h1>
-    <script type="module" src="/src/main.js"></script>
-    <img src="assets/1683.png" alt="some_image" />
+    <nav class="nav">
+      <header class="header">
+        <div class="header__icon">
+          <img class="img1" src="/assets/Path 9408@2x.png" alt="mic_image" />
+          <img class="img2" src="/assets/JTGPOD@2x.png" alt="jtg_pod_image" />
+        </div>
+        <div class="links-container">
+          <a
+            class="links-container__links links-container__links--active"
+            href="/home/"
+          >
+            Home</a
+          >
+          <a class="links-container__links" href="/about/">About</a>
+          <a class="links-container__links" href="/blog/">Blog</a>
+          <a class="links-container__links" href="/pages/">Pages</a>
+          <a class="links-container__links" href="/contact/">Contact</a>
+          <a class="links-container__links" href="/subscribe/">
+            <button class="button">Subscribe </button>
+          </a>
+        </div>
+      </header>
+    </nav>
   </body>
 </html>
