@@ -1,0 +1,21 @@
+:root {
+  --palette-primary: #ff4900;
+  --palette-gray: #ebebeb;
+  --palette-white: white;
+  --palette-black: black;
+  --container-width: 1175px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+.button--primary {
+  padding: 14px 37px;
+  background-color: var(--palette-primary);
+  color: var(--palette-white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
