@@ -3,7 +3,7 @@
   --palette-gray: #ebebeb;
   --palette-white: white;
   --palette-black: black;
-  --container-width: 1230px;
+  --container-width: 1250px;
 }
 
 * {
@@ -34,8 +34,8 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 28px;
-  padding: 0px 19px;
+  gap: 30px;
+  padding: 0px 37px;
 }
 
 .nav__list {
@@ -67,6 +67,6 @@
 }
 
 .nav__button:hover {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--palette-white);
   color: var(--palette-primary);
 }
