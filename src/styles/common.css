@@ -11,11 +11,16 @@
   max-width: var(--container-width);
 }
 
-.button--primary {
+.button__primary {
   padding: 14px 37px;
   background-color: var(--palette-primary);
   color: var(--palette-white);
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.button__primary:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }

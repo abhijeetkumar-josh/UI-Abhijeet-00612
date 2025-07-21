@@ -47,17 +47,3 @@
   border-bottom: 2px solid var(--palette-primary);
   color: var(--palette-primary);
 }
-
-.button--primary {
-  padding: 14px 37px;
-  background-color: var(--palette-primary);
-  color: var(--palette-white);
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.button--primary:hover {
-  background-color: var(--palette-white);
-  color: var(--palette-primary);
-}
