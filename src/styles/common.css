@@ -24,3 +24,13 @@
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}

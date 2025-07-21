@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,13 +28,14 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 33px;
+  padding: 0px 0px;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
-  gap: 22px;
+  gap: 17px;
 }
 
 .nav__link {
@@ -66,11 +70,6 @@
   padding: 25px 43px;
 }
 
-.section__heading {
-  font-size: 36px;
-  font-weight: 600;
-}
-
 .blog__posts {
   display: flex;
 }
@@ -85,8 +84,7 @@
 .blog__content {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  gap: 17px;
+  gap: 20px;
 }
 
 .blog__block {
@@ -99,8 +97,9 @@
 }
 
 .blog__tags {
-  padding: 57px 20px;
-  line-height: 30px;
+  margin: 0px 5px;
+  padding: 54px 8px;
+  line-height: 32px;
 }
 
 .blog__container {
