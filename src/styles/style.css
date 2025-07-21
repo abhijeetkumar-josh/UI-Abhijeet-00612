@@ -5,10 +5,8 @@
 }
 
 .nav {
-  position: relative;
   min-height: 260px;
   width: 100%;
-  display: inline-block;
   background-color: var(--palette-gray);
 }
 
@@ -16,7 +14,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 41px auto;
+  margin: 0px auto;
+  padding: 41px 0px;
 }
 
 .nav__icon {
@@ -27,10 +26,6 @@
   display: flex;
   align-items: center;
   gap: 36px;
-<<<<<<< HEAD
-=======
-  padding: 0px 0px;
->>>>>>> e7e8a26 (AK-RU-02 Review Fixes 01)
 }
 
 .nav__list {
@@ -53,3 +48,80 @@
   color: var(--palette-primary);
 }
 
+.section {
+  max-width: var(--container-width);
+  margin: -62px auto;
+  background-color: white;
+  box-shadow: 1px 3px 5px 4px rgb(16 16 30 / 20%);
+}
+
+.section__container {
+  background-color: var(--palette-white);
+  padding: 30px;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 43px;
+}
+
+.section__heading {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.blog__posts {
+  display: flex;
+}
+
+.blog__header {
+  padding: 25px 19px 0px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 17px;
+}
+
+.blog__block {
+  display: inline-block;
+  margin: 4px 60px;
+}
+
+.blog__text {
+  line-height: 20px;
+}
+
+.blog__tags {
+  padding: 57px 20px;
+  line-height: 30px;
+}
+
+.blog__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tags__container {
+  border-left: 2px solid #cbc5c5;
+  min-width: 195px;
+}
+
+.blog__footer {
+  display: flex;
+  justify-content: center;
+  margin: 47px 0px;
+}
+
+.button__primary--lg {
+  padding: 12px 41px;
+  align-self: flex-end;
+  margin: 0px 17px;
+}
