@@ -3,13 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <script type="module" src="/src/main.js"></script>
+    <title>UI Design</title>
   </head>
   <body>
-    <h1>Hello Everyone!!!</h1>
-    <script type="module" src="/src/main.js"></script>
-    <img src="assets/1683.png" alt="some_image" />
+    <!-- navbar section -->
+    <nav aria-label="Main Navigation" class="nav">
+      <div class="nav__header container">
+        <a class="nav__icon" href="/">
+          <img src="/assets/Path 9408@2x.png" alt="Image of MIC" />
+          <img src="/assets/JTGPOD@2x.png" alt="Image of the JTGPOD" />
+        </a>
+        <div class="nav__links">
+          <ul class="nav__list">
+            <li class="nav__item"
+              ><a class="nav__link" href="/home/">Home</a></li
+            >
+            <li class="nav_item"
+              ><a class="nav__link" href="/about/">About</a></li
+            >
+            <li class="nav_item"
+              ><a class="nav__link" href="/blogs/">Blog</a></li
+            >
+            <li class="nav_item"
+              ><a class="nav__link" href="/pages/">Pages</a></li
+            >
+            <li class="nav_item">
+              <a class="nav__link" href="/contact/">Contact</a>
+            </li>
+          </ul>
+          <button class="button__primary">Subscribe </button>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
