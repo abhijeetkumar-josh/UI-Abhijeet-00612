@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/styles/common.css" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js"></script>
     <title>UI Design</title>
   </head>
   <body>
@@ -35,7 +36,7 @@
               <a class="nav__link" href="/contact/">Contact</a>
             </li>
           </ul>
-          <button class="button--primary">Subscribe </button>
+          <button class="button__primary">Subscribe </button>
         </div>
       </div>
     </nav>
@@ -43,270 +44,326 @@
     <section class="section">
       <div class="section__container">
         <div class="section__header">
-          <h3 class="section__heading">Latest Blogs</h3>
-          <button class="button--primary">View all</button>
+          <h2 class="section__heading">Latest Blogs</h2>
+          <button class="button__primary">View all</button>
         </div>
-        <div class="section__content">
-          <div class="section__article">
-            <ul class="section__list">
-              <li class="section__img">
-                <div class="section__img--wrapper">
-                  <img src="assets/2123.png" alt="Image of a cute dog" />
-                  <img
-                    class="section__tinynewlogo"
-                    src="/assets/Path 9408@2x.png"
-                    alt="logo of new tag"
-                  />
-                </div>
-              </li>
-              <li class="section__text">
-                <h3 class="section__subHeading"
-                  >Visiting my best friend's city for the first time</h3
-                >
-                <p class="section__para"
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Iste minima obcaecati ea qui eligendi,ariatur delectus
-                  nesciunt? Fuga earum sunt fugit quam commodi</p
-                >
-                <div class="section__buttonContainer">
-                  <button class="button--primary button--primary__wide"
-                    >View</button
+        <div class="blog__container">
+          <div class="blog__block">
+            <div class="blog__posts">
+              <div class="blog__img">
+                <img src="assets/2123.png" alt="Image of a cute dog" />
+              </div>
+              <div class="blog__content">
+                <div class="blog__header">
+                  <h3 class="blog__title"
+                    >Visiting my best friend's city for first time</h3
                   >
+                  <p class="blog__text"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iste minima obcaecati ea qui eligendi,ariatur delectus
+                    nesciunt? Fuga earum sunt fugit
+                  </p>
                 </div>
-              </li>
-              <li class="section__verline"></li>
-              <li class="section__tags">
-                <ul class="section__nestedList">
-                  <li class="section__nestedItem">#Season 1</li>
-                  <li class="section__nestedItem">#Posted on Sep 3,2020</li>
-                  <li class="section__nestedItem">#audio/goodbyes/life</li>
+                <button class="button__primary button__primary--lg"
+                  >View</button
+                >
+              </div>
+              <div class="tags__container">
+                <ul class="blog__tags">
+                  <li class="blog__tag">#Season 1</li>
+                  <li class="blog__tag">#Posted on Sep 3,2020</li>
+                  <li class="blog__tag">#audio/goodbyes/life</li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="section__article">
-            <ul class="section__list">
-              <li class="section__img">
+          <div class="blog__block">
+            <div class="blog__posts">
+              <div class="blog__img">
                 <img
                   src="/assets/hello-revival-YH_Ne4R9ZAc-unsplash.png"
-                  alt="Image of a books and its shadow in hand"
+                  alt="Image of a book and a hand reaching it"
                 />
-              </li>
-              <li class="section__text">
-                <h3 class="section__subHeading"
-                  >An interesting read i definitely recommend</h3
-                >
-                <p class="section__para"
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Iste minima obcaecati ea qui eligendi,ariatur delectus
-                  nesciunt? Fuga earum sunt fugit quam commodi</p
-                >
-                <div class="section__buttonContainer">
-                  <button class="button--primary button--primary__wide"
-                    >View</button
+              </div>
+              <div class="blog__content">
+                <div class="blog__header">
+                  <h3 class="blog__title"
+                    >An interesting read I definitely recommend</h3
                   >
+                  <p class="blog__text"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iste minima obcaecati ea qui eligendi,ariatur delectus
+                    nesciunt? Fuga earum sunt fugit
+                  </p>
                 </div>
-              </li>
-              <li class="section__verline"></li>
-              <li class="section__tags">
-                <ul class="section__nestedList">
-                  <li class="section__nestedItem">#Season 1</li>
-                  <li class="section__nestedItem">#Posted on July 29,2020</li>
-                  <li class="section__nestedItem">#goodbyes/life</li>
+                <button class="button__primary button__primary--lg"
+                  >View</button
+                >
+              </div>
+              <div class="tags__container">
+                <ul class="blog__tags">
+                  <li class="blog__tag">#Season 1</li>
+                  <li class="blog__tag">#Posted on Sep 3,2020</li>
+                  <li class="blog__tag">#audio/goodbyes/life</li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-
-          <div class="section__article section__article--modifier">
-            <ul class="section__list">
-              <li class="section__img">
+          <div class="blog__block">
+            <div class="blog__posts">
+              <div class="blog__img">
                 <img
                   src="/assets/alexander-tsang-_frvdyMH6S0-unsplash.png"
-                  alt="Image of a gate of historic castel"
+                  alt="Image of a door of a old castle"
                 />
-              </li>
-              <li class="section__text">
-                <h3 class="section__subHeading"
-                  >what if all my adventures go back home?</h3
-                >
-                <p class="section__para"
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Iste minima obcaecati ea qui eligendi,ariatur delectus
-                  nesciunt? Fuga earum sunt fugit quam commodi</p
-                >
-                <div class="section__buttonContainer">
-                  <button class="button--primary button--primary__wide"
-                    >View</button
+              </div>
+              <div class="blog__content">
+                <div class="blog__header">
+                  <h3 class="blog__title"
+                    >What if all my adventures go back home?</h3
                   >
+                  <p class="blog__text"
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iste minima obcaecati ea qui eligendi,ariatur delectus
+                    nesciunt? Fuga earum sunt fugit
+                  </p>
                 </div>
-              </li>
-              <li class="section__verline"></li>
-              <li class="section__tags">
-                <ul class="section__nestedList">
-                  <li class="section__nestedItem">#Season 1</li>
-                  <li class="section__nestedItem">#Posted on Sep 11,2020</li>
-                  <li class="section__nestedItem">#audio/goodbyes</li>
+                <button class="button__primary button__primary--lg"
+                  >View</button
+                >
+              </div>
+              <div class="tags__container">
+                <ul class="blog__tags">
+                  <li class="blog__tag">#Season 1</li>
+                  <li class="blog__tag">#Posted on Sep 3,2020</li>
+                  <li class="blog__tag">#audio/goodbyes/life</li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="section__footer">
-            <button class="button--primary modifier">Show More Episode</button>
-          </div>
+        </div>
+        <div class="blog__footer">
+          <button class="button__secondary">Show More Episode</button>
         </div>
       </div>
     </section>
 
     <!--Blog Posts section-->
 
-    <section class="carousel-section">
-      <h2 class="carousel-title">Blog Posts</h2>
-      <div class="carousel-wrapper">
-        <div class="carousel-container">
-          <div class="carousel-track">
-            <!-- Card 1 -->
-            <div class="card">
-              <div class="card__header"
-                ><p class="card-author"
-                  >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
-                >
-                <p class="card-category">Cantonese Radio</p></div
-              >
-              <div class="card__footer">
-                <h3 class="card-title"
-                  >Global News Podcast Thai soldier kills many people a shooting
-                  rampage</h3
-                >
-                <p class="card-desc"
-                  >Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore
-                  ………..</p
-                >
-                <div class="section__button--container">
-                  <button class="button--primary button--primary__modifications"
-                    >Read More</button
+    <section class="carousel__section">
+      <h2 class="carousel__title">Blog Posts</h2>
+
+      <div id="blog__carousel" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__header">
+                  <p class="card__author"
+                    >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
                   >
+                  <p class="card__category">Cantonese Radio</p>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title"
+                    >Global News Podcast Thai soldier kills many people a
+                    shooting rampage</h3
+                  >
+                  <p class="card__description"
+                    >Lorem ipsum dolor sit amet, consectetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut</p
+                  >
+                  <div class="post__button">
+                    <button class="button__secondary">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <!-- Card 2 -->
-            <div class="card">
-              <div class="card__header"
-                ><p class="card-author"
-                  >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
-                >
-                <p class="card-category">Cantonese Radio</p></div
-              >
-              <div class="card__footer">
-                <h3 class="card-title"
-                  >News hour - World Health Organization says a new coronavirus
-                  cases</h3
-                >
-                <p class="card-desc"
-                  >Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore
-                  ………..</p
-                >
-                <div class="section__button--container">
-                  <button class="button--primary button--primary__modifications"
-                    >Read More</button
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__header">
+                  <p class="card__author"
+                    >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
                   >
+                  <p class="card__category">Cantonese Radio</p>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title"
+                    >News hour - World Health Organization says a new
+                    coronavirus cases</h3
+                  >
+                  <p class="card__description"
+                    >Lorem ipsum dolor sit amet, consectetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut</p
+                  >
+                  <div class="post__button">
+                    <button class="button__secondary">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <!-- Card 3 -->
-            <div class="card">
-              <div class="card__header"
-                ><p class="card-author"
-                  >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
-                >
-                <p class="card-category">Cantonese Radio</p></div
-              >
-              <div class="card__footer">
-                <h3 class="card-title"
-                  >Over to You - Programme face the axe substantial financial
-                  cutbacks</h3
-                >
-                <p class="card-desc"
-                  >Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore
-                  ………..</p
-                >
-                <div class="section__button--container">
-                  <button class="button--primary button--primary__modifications"
-                    >Read More</button
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__header">
+                  <p class="card__author"
+                    >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
                   >
+                  <p class="card__category">Cantonese Radio</p>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title"
+                    >Over to You - Programme face the axe substantial financial
+                    cutbacks</h3
+                  >
+                  <p class="card__description"
+                    >Lorem ipsum dolor sit amet, consectetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut</p
+                  >
+                  <div class="post__button">
+                    <button class="button__secondary">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <div class="card">
-              <div class="card__header"
-                ><p class="card-author"
-                  >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
-                >
-                <p class="card-category">Cantonese Radio</p></div
-              >
-              <div class="card__footer">
-                <h3 class="card-title"
-                  >Over to You - Programme face the axe substantial financial
-                  cutbacks</h3
-                >
-                <p class="card-desc"
-                  >Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore
-                  ………..</p
-                >
-                <div class="section__button--container">
-                  <button class="button--primary button--primary__modifications"
-                    >Read More</button
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__header">
+                  <p class="card__author"
+                    >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
                   >
+                  <p class="card__category">Cantonese Radio</p>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title"
+                    >News hour - World Health Organization says a new
+                    coronavirus cases</h3
+                  >
+                  <p class="card__description"
+                    >Lorem ipsum dolor sit amet, consectetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut</p
+                  >
+                  <div class="post__button">
+                    <button class="button__secondary">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <div class="card">
-              <div class="card__header"
-                ><p class="card-author"
-                  >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
-                >
-                <p class="card-category">Cantonese Radio</p></div
-              >
-              <div class="card__footer">
-                <h3 class="card-title"
-                  >News hour - World Health Organization says a new coronavirus
-                  cases</h3
-                >
-                <p class="card-desc"
-                  >Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore
-                  ………..</p
-                >
-                <div class="section__button--container">
-                  <button class="button--primary button--primary__modifications"
-                    >Read More</button
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__header">
+                  <p class="card__author"
+                    >By <span>Mehedi Hasan</span> &nbsp; Sep 11, 2020</p
                   >
+                  <p class="card__category">Cantonese Radio</p>
+                </div>
+                <div class="card__footer">
+                  <h3 class="card__title"
+                    >Global News Podcast Thai soldier kills many people a
+                    shooting rampage</h3
+                  >
+                  <p class="card__description"
+                    >Lorem ipsum dolor sit amet, consectetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor invidunt ut</p
+                  >
+                  <div class="post__button">
+                    <button class="button__secondary">Read More</button>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Add more cards here -->
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="blogs__buttons">
-        <button id="prevBtn" class="carousel-btn">
+
+      <div class="carousel__buttons">
+        <button id="prevBtn" class="carousel__btn">
           <img src="/assets/arrow-left.png" alt="left arrow" />
         </button>
-        <button id="nextBtn" class="carousel-btn">
+        <button id="nextBtn" class="carousel__btn">
           <img src="/assets/arrow-right.png" alt="right arrow" />
         </button>
       </div>
     </section>
+
+    <footer class="footer container">
+      <div class="footer__about">
+        <a class="nav__icon" href="/">
+          <img src="/assets/Path 9408@2x.png" alt="Image of MIC" />
+          <img src="/assets/JTGPOD@2x.png" alt="Image of the JTGPOD" />
+        </a>
+        <p
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+          quisquam
+        </p>
+        <h5>Socials</h5>
+        <div class="about__links">
+          <div class="about__imgs"
+            ><img
+              class="about__img"
+              src="/assets/facebook.png"
+              alt="Logo of facebook company"
+          /></div>
+          <div class="about__imgs"
+            ><img
+              class="about__img"
+              src="/assets/linkedin.png"
+              alt="Logo of Linkedin company"
+          /></div>
+          <div class="about__imgs"
+            ><img
+              class="about__img"
+              src="/assets/instagram.png"
+              alt="Logo of instagram company"
+          /></div>
+        </div>
+      </div>
+      <div class="footer__pages">
+        <h4 class="footer__heading">Pages</h4>
+        <ul class="pages__links">
+          <li class="pages__link">About</li>
+          <li class="pages__link">Episode</li>
+          <li class="pages__link">Blog</li>
+          <li class="pages__link">Contact</li>
+        </ul>
+      </div>
+      <div class="footer__blogs">
+        <h4 class="footer__heading">Recent blogs</h4>
+        <ul class="blog__links">
+          <li class="blog__link">Blog 1</li>
+          <li class="blog__link">Blog 2</li>
+          <li class="blog__link">Blog 3</li>
+          <li class="blog__link">Blog 4</li>
+        </ul>
+      </div>
+      <div class="footer__partners">
+        <h4 class="footer__heading">Partners</h4>
+        <ul class="partner__links">
+          <li class="partner__link">
+            <img
+              src="/assets/google_podcast@2x.png"
+              alt="Logo of google company"
+            />
+          </li>
+          <li class="partner__link">
+            <img
+              src="/assets/apple_podcast@2x.png"
+              alt="Logo of apple company"
+            />
+          </li>
+          <li class="partner__link">
+            <img src="/assets/spotify@2x.png" alt="Logo of spotify company" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="company__name container">
+      <p>@2020 Josh Technology Group</p>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
