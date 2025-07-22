@@ -47,6 +47,10 @@ body {
   font-size: 17px;
 }
 
+.nav__link:hover {
+  border-bottom: 2px solid var(--palette-primary);
+  color: var(--palette-primary);
+}
 .section {
   max-width: var(--container-width);
   margin: -62px auto;
