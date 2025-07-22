@@ -14,10 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
   splide.mount()
-  document.getElementById('prevBtn').addEventListener('click', () => {
-    splide.go('<')
-  })
-  document.getElementById('nextBtn').addEventListener('click', () => {
-    splide.go('>')
-  })
+  const prevBtn = document.getElementById('prevBtn')
+  const nextBtn = document.getElementById('nextBtn')
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      splide.go('<')
+    })
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      splide.go('>')
+    })
+  }
 })
